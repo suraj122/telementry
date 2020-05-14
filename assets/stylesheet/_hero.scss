@@ -1,0 +1,26 @@
+.hero {
+  height: 100vh;
+  background: url("../media/pic01.jpg") 0 0 no-repeat;
+  border-top: 10px solid $primary;
+  background-size: cover;
+}
+.inner {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #ffffff;
+  h2 {
+    font-size: 2.6rem;
+    // font-weight: 00;
+    line-height: 1.6;
+    border-bottom: 1px solid rgba(#fff, 0.7);
+    padding-bottom: 2rem;
+    margin: 3rem 0;
+  }
+}
+.img-box {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 0 auto;
+}

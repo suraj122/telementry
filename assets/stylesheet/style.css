@@ -1,0 +1,555 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.flex, .center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.padding {
+  padding: 5rem 0;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #353535;
+  line-height: 1.6;
+}
+
+.circular-box {
+  width: 4rem;
+  height: 4rem;
+  background-color: #ff887b;
+  color: #ffffff;
+  border-radius: 50%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}
+.header {
+  padding: 2rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-wrapper {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.brand h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 0.2rem 2rem 0.2rem 0;
+  border-right: 0.5px solid #ffffff;
+}
+.brand h2 {
+  margin-left: 2rem;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-item {
+  margin-left: 2rem;
+}
+.nav-item a {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-bottom: 4px;
+}
+.nav-item a:hover {
+  border-bottom: 1.5px solid #ff887b;
+}
+.nav-item a.active {
+  border-bottom: 2px solid #ff887b;
+}
+
+#toggle {
+  display: none;
+}
+
+.bars {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .bars {
+    display: inline-block;
+    font-size: 2rem;
+    color: #ffffff;
+    position: relative;
+    z-index: 99;
+  }
+
+  .brand {
+    position: relative;
+    z-index: 99;
+  }
+
+  #toggle:checked ~ .nav {
+    display: inline-block;
+  }
+
+  .nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 136, 123, 0.7);
+    padding-top: 9rem;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin: 1rem 0;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+  }
+}
+.hero {
+  height: 100vh;
+  background: url("../media/pic01.jpg") 0 0 no-repeat;
+  border-top: 10px solid #ff887b;
+  background-size: cover;
+}
+
+.inner {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+.inner h2 {
+  font-size: 2.6rem;
+  line-height: 1.6;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  padding-bottom: 2rem;
+  margin: 3rem 0;
+}
+
+.img-box {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.feature .col-1-1 {
+  width: 30%;
+}
+.feature .col-1-3 {
+  width: 70%;
+  padding-left: 4rem;
+}
+.feature .heading {
+  margin-bottom: 2rem;
+}
+
+.feature-item {
+  width: 50%;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  padding: 2rem 0;
+}
+.feature-item:first-child {
+  border-right: 1px solid rgba(53, 53, 53, 0.4);
+  border-bottom: 1px solid rgba(53, 53, 53, 0.4);
+  padding-right: 1rem;
+}
+.feature-item:nth-child(2) {
+  border-bottom: 1px solid rgba(53, 53, 53, 0.4);
+  padding-left: 1.5rem;
+}
+.feature-item:nth-child(3) {
+  border-right: 1px solid rgba(53, 53, 53, 0.4);
+  padding-right: 1rem;
+}
+.feature-item:last-child {
+  padding-left: 1.5rem;
+}
+
+.icon-box {
+  color: #ff887b;
+  font-size: 2rem;
+}
+
+.feature-description {
+  padding-left: 2rem;
+}
+.feature-description h4 {
+  color: #ff887b;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.feature-description p {
+  font-size: 0.9rem;
+  color: rgba(53, 53, 53, 0.8);
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .feature .col-1-1 {
+    width: 100%;
+    order: 1;
+  }
+  .feature .col-1-3 {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .feature-item {
+    width: 100%;
+    border: 0 !important;
+    border-bottom: 1px solid rgba(53, 53, 53, 0.4) !important;
+    padding: 2rem 0 !important;
+  }
+  .feature-item:last-child {
+    border-bottom: 0px !important;
+  }
+}
+.col-1-1 {
+  width: 25%;
+}
+
+.col-1-2 {
+  width: 50%;
+}
+
+.col-1-3 {
+  width: 75%;
+}
+
+@media screen and (max-width: 768px) {
+  .col-1-1 {
+    width: 100%;
+  }
+
+  .col-1-2 {
+    width: 100%;
+  }
+
+  .col-1-3 {
+    width: 100%;
+  }
+}
+.counter {
+  background-color: #ff887b;
+}
+
+.counter-item {
+  padding: 1rem 2rem;
+  border-right: 1px solid #ffffff;
+  color: #ffffff;
+}
+.counter-item:last-child {
+  border-right: 0;
+}
+.counter-item h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.counter-item h5 {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.counter-item p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 768px) {
+  .counter-item {
+    padding: 1rem 2rem;
+    border: 0;
+  }
+}
+.testimonial-item {
+  height: 32.5rem;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 0 3rem;
+}
+.testimonial-item:first-child {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../media/pic03.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+.testimonial-item:last-child {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../media/pic04.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+.testimonial-item q {
+  font-size: 2rem;
+}
+.testimonial-item h6 {
+  color: #ff887b;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.testimonial-item p {
+  font-size: 0.9rem;
+}
+
+.article {
+  padding-right: 2rem;
+}
+.article .heading {
+  margin-bottom: 2rem;
+}
+.article img {
+  margin-bottom: 1rem;
+}
+.article p {
+  line-height: 1.6;
+  color: rgba(53, 53, 53, 0.8);
+}
+.article .btn {
+  color: rgba(53, 53, 53, 0.8);
+  border-color: rgba(53, 53, 53, 0.8);
+  margin-top: 2rem;
+}
+
+.progress-bar {
+  padding-left: 2rem;
+}
+
+.progress-item {
+  margin-bottom: 1rem;
+}
+.progress-item h6 {
+  color: rgba(53, 53, 53, 0.8);
+  margin-bottom: 1rem;
+}
+.progress-item p {
+  font-size: 0.75rem;
+  color: #ff887b;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 2px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #ff887b;
+}
+
+@media screen and (max-width: 768px) {
+  .article {
+    padding-right: 0;
+  }
+
+  .progress-bar {
+    padding-left: 0;
+    margin-top: 3rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

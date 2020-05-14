@@ -1,0 +1,27 @@
+.testimonial-item {
+  height: 32.5rem;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 0 3rem;
+  &:first-child {
+    background: linear-gradient(rgba(#000, 0.4), rgba(#000, 0.4)),
+      url("../media/pic03.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  &:last-child {
+    background: linear-gradient(rgba(#000, 0.4), rgba(#000, 0.4)),
+      url("../media/pic04.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  q {
+    font-size: 2rem;
+  }
+  h6 {
+    color: $primary;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}

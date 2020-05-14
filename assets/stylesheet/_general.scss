@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: $fontFamily;
+  line-height: 1.5;
+}
+body {
+  line-height: 1.5;
+}
+// Anchor Element
+a {
+  text-decoration: none;
+}
+// Container
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+// Flext
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.center {
+  @extend .flex;
+  justify-content: center;
+}
+
+// Align Text
+.text-center {
+  text-align: center;
+}
+
+// Buttons
+.btn {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(#ffffff, 0.1);
+  }
+}
+
+// Padding
+.padding {
+  padding: 5rem 0;
+}
+
+// Responsive Image
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+// Heading
+.heading {
+  font-size: 2rem;
+  color: $text;
+  line-height: 1.6;
+}
+
+// Circular Box
+.circular-box {
+  width: 4rem;
+  height: 4rem;
+  background-color: $primary;
+  color: #ffffff;
+  border-radius: 50%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}
