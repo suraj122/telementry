@@ -308,7 +308,7 @@ a {
 }
 .hero {
   height: 100vh;
-  background: url("../media/pic01.jpg") 0 0 no-repeat;
+  background: #ff887b url("../media/pic01.jpg") 0 0 no-repeat;
   border-top: 10px solid #ff887b;
   background-size: cover;
 }
